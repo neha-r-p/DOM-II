@@ -14,3 +14,9 @@ navLink.forEach((el, index) =>
           }, 400);
         }, false)
 );
+
+navLink.forEach((el,index) => {
+    el.addEventListener('click', (event) =>{
+      event.preventDefault();
+      console.log('not today')
+  })})
