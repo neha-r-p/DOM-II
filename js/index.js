@@ -5,14 +5,16 @@ funBusImg.addEventListener('click', (event) => {
 });
 
 const navLink = document.querySelectorAll('.nav-link');
-navLink.forEach((el, index) =>
-    el.addEventListener('mouseover', (event)=> {
+navLink.forEach((el) =>
+    el.addEventListener('mouseover', (event) => {
         el.style.fontSize = "2rem";
+    })
+);
 
-        setTimeout(function() {
-            el.style.fontSize = "";
-          }, 400);
-        }, false)
+navLink.forEach((el) =>
+    el.addEventListener('mouseleave', (event) => {
+        el.style.fontSize = "";
+    })
 );
 
 navLink.forEach((el,index) => {
