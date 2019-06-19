@@ -37,3 +37,9 @@ window.addEventListener('keypress', (event) => {
     alert("oh hi there");
 });
 
+const destinationh2 = document.querySelector('.content-destination h2');
+destinationh2.addEventListener('click', (event) => {
+    destinationh2.style.color = "darkseagreen";
+    destinationh2.style.fontSize ="4rem"
+})
+
