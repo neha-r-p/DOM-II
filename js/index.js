@@ -2,7 +2,13 @@
 const funBusImg = document.querySelector('header img');
 funBusImg.addEventListener('dblclick', (event) => {
     alert("HONK HONK!");
+    event.stopPropagation();
 });
+
+const intro = document.querySelector('.intro');
+intro.addEventListener('dblclick', (event) => {
+    alert("WELCOME FRANDS");
+})
 
 const navLink = document.querySelectorAll('.nav-link');
 navLink.forEach((el) =>
