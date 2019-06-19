@@ -1,6 +1,6 @@
 // Your code goes here
 const funBusImg = document.querySelector('header img');
-funBusImg.addEventListener('click', (event) => {
+funBusImg.addEventListener('dblclick', (event) => {
     alert("HONK HONK!");
 });
 
@@ -17,8 +17,12 @@ navLink.forEach((el) =>
     })
 );
 
-navLink.forEach((el,index) => {
+navLink.forEach((el) => {
     el.addEventListener('click', (event) =>{
       event.preventDefault();
       console.log('not today')
   })})
+
+  window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+});
