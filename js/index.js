@@ -21,8 +21,13 @@ navLink.forEach((el) => {
     el.addEventListener('click', (event) =>{
       event.preventDefault();
       console.log('not today')
-  })})
+  })});
 
-  window.addEventListener('load', (event) => {
+window.addEventListener('load', (event) => {
     console.log('page is fully loaded');
 });
+
+window.addEventListener('keypress', (event) => {
+    alert("oh hi there");
+});
+
